@@ -7,6 +7,7 @@ Person Re-Identification is about identifying a person across different cameras 
 Specificly the task is to match a particular query image of a person to images of the same identity out of a big gallery dataset that contains multiple images in a wide range of people. 
 
 In this field, a common approach is to use convolutional neural networks with three streams, a query stream (the one of the image itself) a negative stream (a stream with the image of a person with a different identity than the query image) and a positive stream (a stream with the image of a person with the same identity as the query image. Here the network is optimized with hard triplet loss, to maximize the distance between the query images and the negative examples and to minimize the distance between the query images and the positive examples. The final pipeline for the model architecture looks as follows:
+
 ![Image description](https://github.com/rensl88/shift_invariance_reid/blob/master/images/architecture.png)
 
 Anti-aliasing is a technique used in signal processing to smoothen signals. In CNNs for image recognition tasks the method has proven to be an effective way to make a network less variant to shifts in the input. It improved the so-called shift invariance of networks. To do so, the network uses maxpooling with a stride of 1 to first remain most information in the image and then afterwards it uses a blur filter (of the size 2,3 or 5) as shown in the image below. 
