@@ -23,7 +23,7 @@ The second experiment tested the general accuracy of anti-aliased networks. This
 To improve CNNs for person re-identification, almost in every approach the output of the three streamed architecture is re-ranked. This is done by using an adjusted nearest neighbour approach. The outcomes show that both the baseline model and the anti-aliased model gain accuracy when re-ranking is applied. 
 ![Image description](https://github.com/rensl88/shift_invariance_reid/blob/master/images/accuracy.png)
 
-More details about the experiments and the theory are included in the master thesis. Access can be requested trough the following link: INCLUDE LINK
+More details about the experiments and the theory are included in the master thesis. Access can be requested trough the following link: https://drive.google.com/file/d/16RI3WgMKv0EXNtJ4Cv5FrP9qnj_kpYZ4/view?usp=sharing
 
 
 ## Overview of notebooks
